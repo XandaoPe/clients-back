@@ -9,7 +9,6 @@ console.log(DATABASE_URL)
 
 @Module({
   imports: [
-    // MongooseModule.forRoot('mongodb+srv://mota:xela2208@motacluster.vdoop.mongodb.net/?retryWrites=true&w=majority&appName=MotaCluster'),
     MongooseModule.forRoot(DATABASE_URL),
     MongooseModule.forFeature([{ name: User.name, schema: UserSchema }]),
   ],

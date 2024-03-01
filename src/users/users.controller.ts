@@ -21,6 +21,11 @@ export class UsersController {
     return this.usersService.findOne(id);
   }
 
+  @Get('imagem/:id')
+  findImage(@Param('id') id: string): Promise<User> {
+    return this.usersService.findImage(id);
+  }
+
   @Put(':id')
   update(@Param('id') id: string, @Body() user: User): Promise<User> {
     return this.usersService.update(id, user);

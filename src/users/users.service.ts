@@ -20,6 +20,10 @@ export class UsersService {
     return this.userModel.findById(id).exec();
   }
 
+  async findImage(id: string): Promise<User> {
+    return this.userModel.findById(id).exec();
+  }
+
   async update(id: string, user: User): Promise<User> {
     return this.userModel.findByIdAndUpdate(id, user, { new: true }).exec();
   }

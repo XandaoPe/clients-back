@@ -10,7 +10,11 @@ export class User extends Document {
   cidade: string;
 
   @Prop()
+  imagem: string;
+  
+  @Prop()
   idade: number;
+
 }
 
 export const UserSchema = SchemaFactory.createForClass(User);

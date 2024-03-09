@@ -8,6 +8,7 @@ export class UsersController {
 
   @Post()
   create(@Body() user: User): Promise<User> {
+    console.log('payload controller...', user)
     return this.usersService.create(user);
   }
 

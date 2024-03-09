@@ -8,7 +8,7 @@ export class User extends Document {
 
   @Prop()
   cidade: string;
-
+  
   @Prop()
   imagem: string;
   
